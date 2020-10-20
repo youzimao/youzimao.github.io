@@ -210,8 +210,7 @@ figure.gallery-group .gallery-group-name {
 }
 .fontawesomeIcon,
 hr:before,
-#article-container .post-outdate-notice:before,
-.note:not(.no-icon)::before {
+#article-container .post-outdate-notice:before {
   display: inline-block;
   font-weight: 600;
   font-style: normal;
@@ -1682,7 +1681,7 @@ img:not([src]) {
   height: auto !important;
 }
 figure.highlight table::-webkit-scrollbar-thumb {
-  background: #dce4eb;
+  background: #06060a;
 }
 figure.highlight pre .deletion {
   color: #bf42bf;
@@ -1691,10 +1690,10 @@ figure.highlight pre .addition {
   color: #105ede;
 }
 figure.highlight pre .meta {
-  color: #7c4dff;
+  color: #c792ea;
 }
 figure.highlight pre .comment {
-  color: rgba(149,165,166,0.8);
+  color: rgba(101,115,126,0.8);
 }
 figure.highlight pre .variable,
 figure.highlight pre .attribute,
@@ -1708,10 +1707,10 @@ figure.highlight pre .css .id,
 figure.highlight pre .tag .name,
 figure.highlight pre .css .class,
 figure.highlight pre .css .pseudo {
-  color: #e53935;
+  color: #ff5370;
 }
 figure.highlight pre .tag {
-  color: #39adb5;
+  color: #89ddff;
 }
 figure.highlight pre .number,
 figure.highlight pre .preprocessor,
@@ -1719,10 +1718,10 @@ figure.highlight pre .literal,
 figure.highlight pre .params,
 figure.highlight pre .constant,
 figure.highlight pre .command {
-  color: #f76d47;
+  color: #f78c6c;
 }
 figure.highlight pre .built_in {
-  color: #ffb62c;
+  color: #ffcb6b;
 }
 figure.highlight pre .ruby .class .title,
 figure.highlight pre .css .rules .attribute,
@@ -1735,12 +1734,12 @@ figure.highlight pre .xml .cdata,
 figure.highlight pre .special,
 figure.highlight pre .number,
 figure.highlight pre .formula {
-  color: #91b859;
+  color: #c3e88d;
 }
 figure.highlight pre .keyword,
 figure.highlight pre .title,
 figure.highlight pre .css .hexcolor {
-  color: #39adb5;
+  color: #89ddff;
 }
 figure.highlight pre .function,
 figure.highlight pre .python .decorator,
@@ -1750,14 +1749,14 @@ figure.highlight pre .ruby .title .keyword,
 figure.highlight pre .perl .sub,
 figure.highlight pre .javascript .title,
 figure.highlight pre .coffeescript .title {
-  color: #6182b8;
+  color: #82aaff;
 }
 figure.highlight pre .tag .attr,
 figure.highlight pre .javascript .function {
-  color: #7c4dff;
+  color: #c792ea;
 }
 #article-container figure.highlight .line.marked {
-  background-color: rgba(128,203,196,0.251);
+  background-color: rgba(113,124,180,0.314);
 }
 #article-container figure.highlight table {
   display: block;
@@ -1771,8 +1770,8 @@ figure.highlight pre .javascript .function {
 #article-container figure.highlight .gutter pre {
   padding-right: 0.5rem;
   padding-left: 0.5rem;
-  background-color: #f6f8fa;
-  color: rgba(144,164,174,0.5);
+  background-color: #0f111a;
+  color: rgba(143,147,162,0.5);
   text-align: right;
 }
 #article-container figure.highlight .code pre {
@@ -1785,8 +1784,8 @@ figure.highlight pre .javascript .function {
   overflow: auto;
   margin: 0 0 1rem;
   padding: 0;
-  background: #f6f8fa;
-  color: #90a4ae;
+  background: #0f111a;
+  color: #8f93a2;
   line-height: 1.6;
 }
 blockquote {
@@ -1829,7 +1828,7 @@ blockquote footer cite:before {
 #article-container pre code {
   padding: 0;
   background: none;
-  color: #90a4ae;
+  color: #8f93a2;
   text-shadow: none;
 }
 #article-container figure.highlight {
@@ -1850,11 +1849,11 @@ blockquote footer cite:before {
 #article-container figure.highlight .caption a {
   float: right;
   padding-right: 10px;
-  color: #90a4ae;
+  color: #8f93a2;
 }
 #article-container figure.highlight figcaption a:hover,
 #article-container figure.highlight .caption a:hover {
-  border-bottom-color: #90a4ae;
+  border-bottom-color: #8f93a2;
 }
 #article-container .highlight-tools {
   position: relative;
@@ -1873,8 +1872,8 @@ blockquote footer cite:before {
   overflow: hidden;
   min-height: 1.2rem;
   height: 2.15em;
-  background: #e6ebf1;
-  color: #90a4ae;
+  background: #0b0d14;
+  color: #8f93a2;
   font-size: 14px;
 }
 #article-container .highlight-tools.closed + table {
@@ -4718,7 +4717,7 @@ blockquote.pullquote.right {
 .note h4,
 .note h5,
 .note h6 {
-  margin-top: 3px;
+  margin-top: 0;
   margin-bottom: 0;
   padding-top: 0 !important;
   border-bottom: initial;
@@ -4740,15 +4739,6 @@ blockquote.pullquote.right {
 .note blockquote:last-child,
 .note img:last-child {
   margin-bottom: 0 !important;
-}
-.note:not(.no-icon) {
-  padding-left: 2.25rem;
-}
-.note:not(.no-icon)::before {
-  position: absolute;
-  top: calc(50% - 0.8rem);
-  left: 0.7rem;
-  font-size: larger;
 }
 .note.default.flat {
   background: #f7f7f7;
@@ -4772,12 +4762,6 @@ blockquote.pullquote.right {
 .note.default:not(.modern) h4,
 .note.default:not(.modern) h5,
 .note.default:not(.modern) h6 {
-  color: #777;
-}
-.note.default:not(.no-icon)::before {
-  content: '\f0a9';
-}
-.note.default:not(.no-icon):not(.modern)::before {
   color: #777;
 }
 .note.primary.flat {
@@ -4804,12 +4788,6 @@ blockquote.pullquote.right {
 .note.primary:not(.modern) h6 {
   color: #6f42c1;
 }
-.note.primary:not(.no-icon)::before {
-  content: '\f055';
-}
-.note.primary:not(.no-icon):not(.modern)::before {
-  color: #6f42c1;
-}
 .note.info.flat {
   background: #eef7fa;
 }
@@ -4832,12 +4810,6 @@ blockquote.pullquote.right {
 .note.info:not(.modern) h4,
 .note.info:not(.modern) h5,
 .note.info:not(.modern) h6 {
-  color: #428bca;
-}
-.note.info:not(.no-icon)::before {
-  content: '\f05a';
-}
-.note.info:not(.no-icon):not(.modern)::before {
   color: #428bca;
 }
 .note.success.flat {
@@ -4864,12 +4836,6 @@ blockquote.pullquote.right {
 .note.success:not(.modern) h6 {
   color: #5cb85c;
 }
-.note.success:not(.no-icon)::before {
-  content: '\f058';
-}
-.note.success:not(.no-icon):not(.modern)::before {
-  color: #5cb85c;
-}
 .note.warning.flat {
   background: #fdf8ea;
 }
@@ -4894,12 +4860,6 @@ blockquote.pullquote.right {
 .note.warning:not(.modern) h6 {
   color: #f0ad4e;
 }
-.note.warning:not(.no-icon)::before {
-  content: '\f06a';
-}
-.note.warning:not(.no-icon):not(.modern)::before {
-  color: #f0ad4e;
-}
 .note.danger.flat {
   background: #fcf1f2;
 }
@@ -4922,12 +4882,6 @@ blockquote.pullquote.right {
 .note.danger:not(.modern) h4,
 .note.danger:not(.modern) h5,
 .note.danger:not(.modern) h6 {
-  color: #d9534f;
-}
-.note.danger:not(.no-icon)::before {
-  content: '\f056';
-}
-.note.danger:not(.no-icon):not(.modern)::before {
   color: #d9534f;
 }
 #article-container .tabs {
@@ -5282,14 +5236,6 @@ blockquote.pullquote.right {
 .read-mode #nav,
 .read-mode .post-outdate-notice,
 .read-mode #web_bg {
-  display: none !important;
-}
-.read-mode #chatra,
-.read-mode #tidio-chat-code,
-.read-mode #tidio-chat,
-.read-mode #daodream-container,
-.read-mode .gitter-chat-embed,
-.read-mode .gitter-open-chat-button {
   display: none !important;
 }
 .read-mode #article-container a {
